@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAVEGAÇÃO */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #006064;
+}
+
+nav .logo {
+    color: #80DEEA;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #E0F7FA;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #80DEEA;
+}
+
+/* HERO */
+.hero {
+    background: #00ACC1;
+    color: #E0F7FA;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #80DEEA;
+    color: #006064;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* SEÇÕES */
+.section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #006064;
+}
+
+.section-alt {
+    background: #E0F7FA;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border: 2px solid #80DEEA;
+    border-radius: 10px;
+    padding: 25px;
+    width: 200px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #00ACC1;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #80DEEA;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #80DEEA;
+    color: #006064;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+/* CONTATO */
+#contato p {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #006064;
+    color: #E0F7FA;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
